@@ -1,0 +1,166 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #2c2332;
+  background: #f8f3ee;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: min(100% - 2rem, 22rem);
+  margin: clamp(2rem, 8vw, 5rem) auto;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-family: Georgia, serif;
+  font-size: clamp(1.8rem, 6vw, 2.5rem);
+  letter-spacing: -0.04em;
+}
+
+.postagem {
+  overflow: hidden;
+  border: 1px solid #e6dbd3;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 12px 32px #432b2014;
+}
+
+.postagem img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.autor-postagem {
+  padding: 0.75rem 1rem;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+}
+
+.acoes button {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #f8f3ee;
+  color: #2c2332;
+  font: 1.75rem/1 'Segoe UI Symbol', sans-serif;
+  cursor: pointer;
+}
+
+.acoes button:hover,
+.acoes button[aria-pressed='true'] {
+  background: #fce8ee;
+  color: #ad2150;
+}
+
+.acoes button:focus-visible {
+  outline: 2px solid #ad2150;
+  outline-offset: 2px;
+}
+
+.comentarios {
+  border-top: 1px solid #e6dbd3;
+  padding: 1rem;
+}
+
+.comentarios h2 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.comentarios ul {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0;
+  list-style: none;
+  overflow-wrap: anywhere;
+}
+
+.comentarios form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.comentarios input,
+.comentarios button {
+  padding: 0.6rem 0.7rem;
+  border-radius: 0.55rem;
+  font: inherit;
+}
+
+.comentarios input {
+  flex: 1 1 10rem;
+  min-width: 0;
+  border: 1px solid #a99ba4;
+}
+
+.comentarios button {
+  border: 0;
+  background: #73324d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.digitando {
+  color: #675361;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.entrada {
+  display: grid;
+  gap: 0.65rem;
+  padding: 1rem;
+  border: 1px solid #e6dbd3;
+  border-radius: 1rem;
+  background: #fff;
+}
+
+.entrada input,
+.entrada button,
+.sessao button {
+  padding: 0.55rem 0.7rem;
+  border: 1px solid #a99ba4;
+  border-radius: 0.55rem;
+  font: inherit;
+}
+
+.entrada button,
+.sessao button {
+  background: #fff;
+  color: #73324d;
+  cursor: pointer;
+}
+
+.sessao {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.sessao p {
+  width: 100%;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+button:disabled {
+  opacity: 0.65;
+  cursor: default;
+}

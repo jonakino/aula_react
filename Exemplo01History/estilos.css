@@ -1,0 +1,50 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #222e3c;
+  background: #f3f6fa;
+}
+
+main {
+  max-width: 52rem;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.comparacao {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: 1rem;
+}
+
+section {
+  padding: 1rem;
+  border: 1px solid #d2dae4;
+  border-radius: 0.75rem;
+  background: white;
+}
+
+section h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.15rem;
+}
+
+.subtitulo {
+  margin: 0;
+  color: #46576a;
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 0.45rem 0.7rem;
+  border: 1px solid #315783;
+  border-radius: 0.35rem;
+  color: #233f60;
+  background: #edf4ff;
+  font: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid #315783;
+  outline-offset: 2px;
+}
