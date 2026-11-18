@@ -14,6 +14,20 @@ Siga a ordem abaixo no mesmo servidor Vite. Os endereços usam a porta padrão 5
 | 6 | [Curtida](http://127.0.0.1:5173/Exemplo03/), [postagem](http://127.0.0.1:5173/Exemplo04/) e [composição](http://127.0.0.1:5173/Exemplo05/) | Pratique estado booleano, valores calculados e estado local em componentes filhos. |
 | 7 | [`useReducer`](http://127.0.0.1:5173/Exemplo06Reducer/) e [API com SQLite](http://127.0.0.1:5173/Exemplo07/) | Organize atualizações por ações e observe um efeito que consulta a API periodicamente. |
 
+## Telas dos exemplos
+
+| Exemplo | Ação demonstrada | Antes | Depois |
+| --- | --- | --- | --- |
+| 00 | Incrementar o contador. | [Ver tela](Exemplo00/telas/antes.png) | [Ver tela](Exemplo00/telas/depois.png) |
+| 01 | Incrementar o contador com `useState`. | [Ver tela](Exemplo01/telas/antes.png) | [Ver tela](Exemplo01/telas/depois.png) |
+| 01 — Histórico | Incrementar o contador em classe e o contador A. O contador B mantém o valor inicial. | [Ver tela](Exemplo01History/telas/antes.png) | [Ver tela](Exemplo01History/telas/depois.png) |
+| 02 | Iniciar o temporizador e aguardar a contagem. | [Ver tela](Exemplo02/telas/antes.png) | [Ver tela](Exemplo02/telas/depois.png) |
+| 03 | Curtir. | [Ver tela](Exemplo03/telas/antes.png) | [Ver tela](Exemplo03/telas/depois.png) |
+| 04 | Curtir a foto. | [Ver tela](Exemplo04/telas/antes.png) | [Ver tela](Exemplo04/telas/depois.png) |
+| 05 | Curtir a foto e publicar um comentário. | [Ver tela](Exemplo05/telas/antes.png) | [Ver tela](Exemplo05/telas/depois.png) |
+| 06 — `useReducer` | Publicar um comentário. | [Ver tela](Exemplo06Reducer/telas/antes.png) | [Ver tela](Exemplo06Reducer/telas/depois.png) |
+| 07 | Entrar como Ana, curtir a foto e publicar um comentário. | [Ver tela](Exemplo07/telas/antes.png) | [Ver tela](Exemplo07/telas/depois.png) |
+
 ## Exemplo 01 — Contador com `useState`
 
 O contador começa em `0`. A cada clique no botão **Incrementar**, o valor aumenta em `1`.
