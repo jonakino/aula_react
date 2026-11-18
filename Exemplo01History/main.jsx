@@ -6,6 +6,7 @@ import './estilos.css';
 createRoot(document.getElementById('root')).render(
   <main>
     <h1>React antes e depois dos Hooks</h1>
+    <p>Estudando o estado em classes e com <code>useState</code> e como <code>useContador</code> reutiliza a lógica com um valor independente para cada contador.</p>
     <p>Clique em um contador e observe quais valores mudam.</p>
 
     <div className="comparacao">

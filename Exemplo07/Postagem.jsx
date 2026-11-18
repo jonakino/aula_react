@@ -63,9 +63,10 @@ export default function Postagem() {
 
   return (
     <main>
+      <h1>{postagem ? 'Meu Instagram' : 'Entrar'}</h1>
+      <p>Estudando o uso de uma API para salvar curtidas e comentários no SQLite e de <code>useEffect</code> para consultar as mudanças periodicamente.</p>
       {postagem ? (
         <>
-          <h1>Meu Instagram</h1>
           <div className="sessao">
             <p>Olá, <strong>{postagem.nome}</strong></p>
             <button type="button" disabled={ocupado} onClick={() => atualizar()}>Atualizar</button>
@@ -88,15 +89,12 @@ export default function Postagem() {
           </article>
         </>
       ) : (
-        <>
-          <h1>Entrar</h1>
-          <form className="entrada" onSubmit={entrar}>
-            <label htmlFor="nome">Seu nome</label>
-            <input id="nome" value={nome} onChange={evento => setNome(evento.target.value)}
-              maxLength={40} required disabled={ocupado} />
-            <button type="submit" disabled={ocupado || !nome.trim()}>Entrar</button>
-          </form>
-        </>
+        <form className="entrada" onSubmit={entrar}>
+          <label htmlFor="nome">Seu nome</label>
+          <input id="nome" value={nome} onChange={evento => setNome(evento.target.value)}
+            maxLength={40} required disabled={ocupado} />
+          <button type="submit" disabled={ocupado || !nome.trim()}>Entrar</button>
+        </form>
       )}
       {erro && <p role="alert">{erro}</p>}
     </main>

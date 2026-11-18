@@ -8,6 +8,7 @@ export default function Postagem() {
   return (
     <main>
       <h1>Meu Instagram</h1>
+      <p>Estudando o <code>useState</code> para alternar o coração da foto e calcular o total a partir das 10 curtidas iniciais.</p>
 
       <article className="postagem" aria-label="Postagem com foto de gato">
         <img src={fotoGato} alt="Gato laranja com as patas no parapeito da janela" />
