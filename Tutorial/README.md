@@ -1,4 +1,23 @@
-# Tutorial do Exemplo 01 — Contador com React
+# Tutorial de React — Estado, Hooks e ciclo de vida
+
+## Roteiro de Hooks e ciclo de vida
+
+1. Abra `/Exemplo00/` e procure no [JavaScript puro](../Exemplo00/main.js) a variável que guarda o valor e a instrução que escreve no DOM.
+2. Em `/Exemplo01History/`, mostre primeiro o [contador em classe](../Exemplo01History/ContadorClasse.jsx). Siga o clique até `this.setState` e localize o valor em `render`.
+3. Abra `/Exemplo01/` e compare com o [contador em função](../Exemplo01/example_usestate.jsx). Os Hooks chegaram no React 16.8, em 2019. Nesse código, `useState` guarda o valor entre renderizações e o clique solicita a atualização com `setContador`. Chame Hooks no topo de componentes de função ou de Hooks customizados. [React 16.8](https://legacy.reactjs.org/blog/2019/02/06/react-v16.8.0.html) · [Regras dos Hooks](https://react.dev/reference/rules/rules-of-hooks)
+4. Abra `/Exemplo02/` para a demonstração abaixo.
+5. Volte a `/Exemplo01History/`, clique apenas em **Com Hook A** e compare os valores com **Com Hook B**. Abra [`useContador`](../Exemplo01History/useContador.js) para mostrar como cada chamada reaproveita a mesma lógica com estado próprio.
+
+### O temporizador com `useEffect`
+
+No [código do temporizador](../Exemplo02/example_useeffect.jsx), acompanhe o valor de `ativo`.
+
+1. Ao montar, `ativo` começa como `false` e o efeito retorna sem criar um intervalo.
+2. Clique em **Iniciar**. A mudança em `ativo` dispara o efeito, que cria um intervalo de um segundo.
+3. Clique em **Incrementar** durante a contagem. O contador muda e o intervalo segue em andamento porque `ativo` continua igual.
+4. Clique em **Pausar**. O React executa a limpeza do intervalo antes de rodar o efeito com `ativo` falso.
+
+O componente passa por montagem, atualizações e desmontagem. O efeito sincroniza o componente com um recurso externo, o intervalo do navegador neste exemplo. O React reinicia essa sincronização quando `ativo` muda e encerra a sincronização ao desmontar. Dentro do intervalo, `setContador(c => c + 1)` usa o valor anterior entregue pelo React, por isso o efeito só precisa ler `ativo` do componente. [Ciclo de vida dos efeitos](https://react.dev/learn/lifecycle-of-reactive-effects) · [Métodos de classe](https://react.dev/reference/react/Component)
 
 ## Como executar pelo terminal do Visual Studio
 

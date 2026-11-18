@@ -1,6 +1,18 @@
 # Aula de React
 
-Nesta aula, o contador e a curtida mostram como `useState` guarda o estado e atualiza a interface. O temporizador mostra como `useEffect` configura e limpa um recurso do navegador.
+## Ordem da aula
+
+Siga a ordem abaixo no mesmo servidor Vite. Os endereços usam a porta padrão 5173. O [roteiro do professor](Tutorial/README.md#roteiro-de-hooks-e-ciclo-de-vida) inclui perguntas e uma demonstração de montagem, atualização e desmontagem.
+
+| Etapa | Exemplo | O que observar |
+| --- | --- | --- |
+| 1 | [JavaScript e DOM](http://127.0.0.1:5173/Exemplo00/) | A variável muda e o código escreve o valor no DOM. |
+| 2 | [React com classe](http://127.0.0.1:5173/Exemplo01History/) | Comece pelo cartão da classe. `this.state` guarda o valor, `this.setState` solicita a atualização e `render` descreve a interface. |
+| 3 | [React com `useState`](http://127.0.0.1:5173/Exemplo01/) | Repita o contador em um componente de função. |
+| 4 | [Ciclo de vida e `useEffect`](http://127.0.0.1:5173/Exemplo02/) | Inicie e pause o temporizador para acompanhar a criação e a limpeza do intervalo. |
+| 5 | [Hook customizado](http://127.0.0.1:5173/Exemplo01History/) | Volte aos cartões A e B. Ambos usam `useContador` e cada um mantém seu próprio valor. |
+| 6 | [Curtida](http://127.0.0.1:5173/Exemplo03/), [postagem](http://127.0.0.1:5173/Exemplo04/) e [composição](http://127.0.0.1:5173/Exemplo05/) | Pratique estado booleano, valores calculados e estado local em componentes filhos. |
+| 7 | [`useReducer`](http://127.0.0.1:5173/Exemplo06Reducer/) e [API com SQLite](http://127.0.0.1:5173/Exemplo07/) | Organize atualizações por ações e observe um efeito que consulta a API periodicamente. |
 
 ## Exemplo 01 — Contador com `useState`
 

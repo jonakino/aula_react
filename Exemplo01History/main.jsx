@@ -10,7 +10,7 @@ createRoot(document.getElementById('root')).render(
 
     <div className="comparacao">
       <ContadorClasse
-        titulo="Com classe (Rect Pré Hooks)"
+        titulo="Com classe (React antes dos Hooks)"
         subtitulo="Componente de classe do React com this.state e this.setState."
       />
       <ContadorHook
